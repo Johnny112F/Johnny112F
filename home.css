@@ -21,13 +21,13 @@ header{
 }
 
 #contentcenter{
-    margin-top: 20%;
+    margin-top: 10%;
     align-content: center;
 }
 
 #projectbottom{
     background-color: forestgreen;
-    margin-top: 50%;
+    margin-top: 10%;
 }
 
 header>em>a{
