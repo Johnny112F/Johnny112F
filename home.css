@@ -3,12 +3,21 @@ html{
     
 }
 
+
 header{
     background-color: burlywood;
     text-align: left;
     color: white;
     margin: fill;
     padding-bottom: 5px;
+    
+}
+
+body{
+    
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
     
 }
 
@@ -78,14 +87,6 @@ nav{
     margin:0;
     image-orientation: flip;
     transform: rotateY(180deg);
-    
-}
-
-body{
-    
-   
-    text-align: center;
-    margin-bottom: 100px;
     
 }
     
