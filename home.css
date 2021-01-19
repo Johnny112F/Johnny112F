@@ -138,8 +138,7 @@ footer a{
 }
 
 #aboutme{
-    display: flex;
-    max-width: 100%;
+    
     margin: 400px;
     text-align: center;
     box-shadow:
