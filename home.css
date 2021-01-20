@@ -138,7 +138,7 @@ footer a{
 }
 
 #aboutme{
-    
+    max-width: 100%;
     margin: 400px;
     text-align: center;
     box-shadow:
