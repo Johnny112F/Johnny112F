@@ -1,72 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/home.css">
-    <title>Site</title>
-</head>
-<body>
-    <header class="sitename"><em><a href="">johnathanRaiss.com</a></johnathanRaiss></em></header>
-    <nav>
-    <h3 class="bar">
-        <a href="#aboutme">About Me</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a></ul>
-        <a href="#projectheader">Projects</a>
-    </h3>
-    </nav>
-    
-    <div id="back">
-        <img class="rose1" src="/rose.png" alt="">
-        <img class="rose2" src="/rose.png" alt="">
-        <h1>Welcome to my personal page!</h1>
-        <h2><em>My name is Johnathan. Here is my story thus far.</em></h2>
-        <img class="me" src="/IMG_0486.jpeg" alt="profile picture">
-        <h3 class="last">My coding journey is just beginning. On this site you can see my bio, projects I'm working on and learn about my life learning remotely at Rithm school.</h3>
-        <footer class="earth"></footer>
-    </div>
-    
-    <hr>
-    <br>
-    <p><em>Here is the sooty grouse. My favorite and most inspiring creature.</em></p>
-    <img class="sooty" src="sooty.jpeg" alt="">
-    <br>
-    <caption>Life is only what you choose to make it...</caption>
-    <p>-Lancer(Robotech)</p>
-    <hr>
-    <div id="aboutme">
-        
-        <h1>About Me</h1>
-        <p>I was born and raised in Philadelphia, Pennsylvania. 
-            I've traveled around the world somewhat but seem to always end on back on the east coast.
-             When the pandemic hit I needed to take a hiatus from working in the wellness industry,
-            and found a new love for learning coding and understanding modern communication and data technology. I decided to study hard and 
-            am now enrolled in program where I am beginning to learn full time. One day soon I will be a developer or engineer and able to help you or your company
-            with the highest quality engineering services.
-        </p>
-    </div>
-    <hr>
-    <body id="projects">
-    <header id="projectheader">Coding Projects</header>
-    <div id="contentcenter"> 
-        <h1><b><em>Stanford Code in Place Final Project</em></b></h1>
-        <p>A basic math program to show how multiplication and division were practiced in 
-        Ancient Egyptian and Russian systems of mathematics.The program also explains how these ancient systems, partcularly the Egyptian, relate to computer computer language and binary numbers.
-        </p>
-        <iframe width=500px height=300px src="https://www.youtube.com/embed/WDzT2ern4P4" frameborder="0">Stanford Code in Place Final Project</iframe>
-    </div>
-    <div>download the code for this project on github.</div>
-        <a href="https://github.com/Johnny112F/code_in_place/tree/master">ancient_coding.py</a>
-    <footer id="projectbottom"></footer>
-</body>
-    <div>Please click below to download my resume.</div>
-    <div id="resume" class="end"></div>
-    <a href="CurriculumVitae.pdf" download="resume">download my resume</a>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Johnathan Raiss</title>
+    <!-- change favicon LATER!!! -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
 
-    <div id="contact" class="bottom"><em>or contact me at</em> <a href="johnathan.raiss@gmail.com">johnathan.raiss@gmail.com</a></div>
+  <body>
+    <div id="mobile-menu-open" class="shadow-large">
+      <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <footer id ="verybottom">&copy Johnathan Raiss January 2021</footer>
-</body>
+    <!-- End #mobile-menu-toggle -->
+    <!-- make header sticky -->
+    <header class="sticky">
+      <div id="mobile-menu-close">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <ul id="menu" class="shadow">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
 
+    <div id="lead">
+      <div id="lead-content">
+        <h1>Johnathan Raiss</h1>
+        <h2>Full Stack Engineer</h2>
+        <a
+          href="resume/JohnathanRaissResume.pdf"
+          download="JohnathanRaissResume.pdf"
+          class="btn-rounded-white"
+          >Download My Resume</a
+        >
+      </div>
+
+      <div id="lead-overlay"></div>
+
+      <div id="lead-down">
+        <span>
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </span>
+      </div>
+      <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 about-me">
+            <h2 class="heading">About Me</h2>
+            <div class="profile-img">
+              <img src="images/me.jpeg" />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <p>
+              In April of 2020 I began learning JavaScript and Python on my own
+               after achieving many goals I had set for myself as a lecturer, 
+               yoga/movement teacher, and corporate wellness consultant over a 
+               12 year process. After graduating from a program called Code In Place 
+               offered through Stanford, I decided to immerse myself in web development
+                and full stack engineering and was accepted into Rithm School's 
+                renowned program. I am dedicated to continuously learning in a manner 
+                where I am then able to apply my skills fully and effectively to full stack development. 
+                I'm excited for you to be here to learn more about development, achievements,
+                and how I can be a great addition to you're team or company.
+              <br /><br />
+              I bring discipline, dedicated work ethic, humor, thoughtful analysis, 
+              and innovative ability to the projects I work on. I take pride in my 
+              adaptability, willingness to learn, and ability to work well in a team. 
+              I'd love to hear how I can be of service to you. Checkout some projects 
+              I've built and worked on below.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="background-alt">
+      <h2 class="heading">Projects</h2>
+      <div class="container">
+        <div class="row">
+          <div class="project shadow-large">
+            <div class="project-image">
+              <img src="images/clevercounsel.jpeg" />
+            </div>
+            <div class="project-info">
+              <h3>Clever Counsel</h3>
+              <p>
+                As an intern at Clever Counsel, I was able to build an Insomnia routes library
+                utilizing dynamic web token functionality, reorganized and optimized the entire React
+                component library, added Marshmallow serialization into the backend models and routes, and 
+                created error handling features involving AWS lambda and a serverless crawler. My experience 
+                at Clever Counsel has provided me with an excellent background to work well in the front end with React, 
+                back end with python, and with relational databases through using MYSql.
+    
+              </p>
+              <a href="http://clevercounsel.pythonanywhere.com/">View Project</a>
+            </div>
+          </div>
+
+          <div class="project shadow-large">
+            <div class="project-image">
+              <img class="yahtzee" src="images/jobly.png" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3>Jobly</h3>
+              <p>
+                Built a LinkedIn clone using a React frontend and Flask backend.
+              </p>
+              <a href="https://github.com/Johnny112F/jobly-backend">Github</a>
+            </div>
+            <!-- End .project-info -->
+          </div>
+          <!-- End .project -->
+          <!-- <div class="project shadow-large">
+            <div class="project-image">
+              <img src="images/LinkedList.png" />
+            </div>
+            
+            <div class="project-info">
+              <h3>LinkedIn Clone</h3>
+              <p>
+                A frontend clone for a LinkedIn/Angel List that allows
+                companies, users, and jobs can interact. The backend was made
+                with Node.js/Express.js.
+              </p>
+              <a href="https://github.com/stevehcao/LinkedList-Frontend"
+                >Github</a
+              >
+            </div> -->
+            <!-- End .project-info -->
+          </div>
+          <div class="project shadow-large">
+            <div class="project-image">
+              <img src="images/warbler.png" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3>Warbler</h3>
+              <p>
+                A Twitter clone using Python and Flask for the backend. Learned
+                about database relationships.
+              </p>
+              <a href="https://warbler-v2.herokuapp.com/">Live Demo</a> <br />
+              <a href="https://github.com/Johnny112F">Github</a>
+            </div>
+            <!-- End .project-info -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+      <h2 class="heading">Skills</h2>
+      <ul>
+        <li><img src="images/techDeck/javascript.svg" /> JavaScript ES6</li>
+        <li><img src="images/techDeck/python.svg" />Python</li>
+        <li><img src="images/techDeck/nodejs.png" />Node.js</li>
+        <li><img src="images/techDeck/react.svg" />React.js</li>
+        <li><img src="images/techDeck/Expressjs.png" alt="" /> Express.js</li>
+        <li><img src="images/techDeck/postgresql.svg" />PostgreSQL</li>
+        <li><img src="images/techDeck/sql.png" />SQL</li>
+        <li><img src="images/techDeck/html-5.png" />HTML5</li>
+        <li><img src="images/techDeck/css-3.png" />CSS3</li>
+        <li><img src="images/techDeck/bootstrap.svg" />Bootstrap</li>
+        <li><img src="images/techDeck/jquery.png" />jQuery</li>
+        <li><img src="images/techDeck/flask.png" />Flask</li>
+        <li><img src="images/techDeck/git.svg" />Git</li>
+      </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+      <h2>Get in Touch</h2>
+      <div class="contact-list">
+        <div class="contact-email">
+          E-mail me at:
+          <a href="mailto:johnathan.raiss@gmail.com">johnathan.raiss@gmail.com</a>
+        </div>
+        <ul>
+          <li>
+            Github
+            <a href="https://github.com/johnny112f" target="_blank"
+              ><i class="fa fa-github" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            LinkedIn
+            <a href="https://www.linkedin.com/in/johnathan-raiss-ba6a964b/" target="_blank"
+              ><i class="fa fa-linkedin" aria-hidden="true"></i
+            ></a>
+          </li>
+          </li>
+        </ul>
+      </div>
+      <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 copyright">
+            <p>
+              Copyright &copy; 2021 Johnathan Raiss
+            </p>
+          </div>
+          <div class="col-sm-2 top">
+            <span id="to-top">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
 </html>
